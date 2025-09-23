@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Utils } from '../utils';
 
 @Component({
   selector: 'app-banner',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './banner.scss',
   standalone: true,
 })
-export class Banner {}
+export class Banner {
+  yoe = '';
+
+  constructor(private utils: Utils) {}
+
+  ngOnInit() {
+    this.yoe = this.utils.getAngularExperience();
+  }
+}
