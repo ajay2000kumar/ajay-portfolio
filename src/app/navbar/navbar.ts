@@ -9,9 +9,12 @@ import { Component } from '@angular/core';
   standalone: true,
 })
 export class Navbar {
-  isMenuOpen = false;
+  mobileMenuOpen = false;
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
   }
 }
