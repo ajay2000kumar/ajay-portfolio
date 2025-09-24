@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:prod": "ng build --configuration production --base-href https://ajay2000kumar.github.io/ajay-portfolio/",
-    "build:prod-op": "ng build --output-path docs"
+    "build:prod-op": "ng build --configuration production --base-href /ajay-portfolio/"
   },
   "prettier": {
     "printWidth": 100,
